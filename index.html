@@ -17,10 +17,9 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: #1a1a1a;
             color: var(--neve);
-            /* Removemos o gradiente pesado para focar na leitura */
+            text-align: center;
         }
 
-        /* Topo Ajustado para Mobile */
         .topo-container {
             background: var(--sangue);
             padding: 20px 10px;
@@ -65,9 +64,10 @@
             line-height: 1.2;
         }
 
-        /* Conteúdo Principal */
         .container {
             padding: 15px;
+            max-width: 800px;
+            margin: auto;
         }
 
         h2 {
@@ -76,7 +76,6 @@
             margin: 20px 0;
         }
 
-        /* Cartões Gigantes para Fácil Leitura */
         .card {
             background: var(--neve);
             color: #000;
@@ -88,7 +87,7 @@
         }
 
         .titulo-card {
-            font-size: 30px; /* Bem grande mesmo */
+            font-size: 30px;
             color: var(--sangue);
             font-weight: 900;
             display: block;
@@ -112,17 +111,27 @@
 
         hr { border: 1px solid #ddd; margin: 20px 0; }
 
-        /* QR Code em destaque */
-        .qr-section {
-            background: #fff;
+        /* Rodapé Personalizado */
+        footer {
+            margin: 40px 0 60px 0;
             padding: 20px;
-            border-radius: 20px;
-            margin: 30px 0 60px 0;
-            display: inline-block;
+            border-top: 1px solid rgba(255, 215, 0, 0.3);
         }
 
-        .qr-section p { color: #000; font-weight: bold; font-size: 18px; }
+        .direitos {
+            font-size: 18px;
+            color: var(--vaticano);
+            margin-bottom: 10px;
+            display: block;
+        }
 
+        .rogai {
+            font-size: 22px;
+            color: var(--neve);
+            font-style: italic;
+            font-weight: bold;
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -132,7 +141,7 @@
     
     <div class="flex-santos">
         <div class="bloco-santo">
-            <img src="maria.png.PNG" alt="Maria" class="foto-topo">
+            <img src="maria.PNG" alt="Maria" class="foto-topo">
             <span class="legenda">Mãe da Esperança</span>
         </div>
         
@@ -160,12 +169,11 @@
         <span class="horario">19:30 — Celebração</span>
     </div>
 
-    <div class="qr-section">
-        <p>Acesse o site:</p>
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://ssvpalvorada.github.io/Comunidade/" alt="QR Code">
-    </div>
+    <footer>
+        <span class="direitos">@ 2026 Comunidade São Vicente De Paulo Alvorada Betim</span>
+        <span class="rogai">São Vicente Rogai Por Nós</span>
+    </footer>
 </div>
 
 </body>
 </html>
-
